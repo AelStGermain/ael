@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MascotApp</title>
+    <link rel="stylesheet" href="/css/form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  </head> 
+
+
+<body>
+<header>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: cadetblue; align-items: center;">
+      <div class="container-fluid">
+        <div class="navbar">
+        <a class="navbar-brand" href="/pages/Index.html">MascotApp</a>
+        <img src="/img/logo navbar.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/vacunas.html">Vacunas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/formulario.html">Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/veterinarias.html">Veterinarias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/ley de tenencia.html  ">Ley de Tenencia</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+      <!--Fin de Nav-->
+</header>
+
+
+<div class="container-fluid bg-custom">
+<form action="Confirm.html" method="get" class="needs-validation" novalidate>
+  <div class="row g-3">
+    <div class="col-md-12">
+      <h2>Registra tu mascota.</h2>
+    </div>
+    <div class="col-md-4">
+      <label for="nombre_mascota" class="form-label">Nombre de la mascota</label>
+      <input type="text" class="form-control" id="nombre_mascota" placeholder="Ej. Berenjena" required>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento</label>
+      <input type="date" class="form-control" id="fecha_nacimiento" required>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="raza" class="form-label">Raza</label>
+      <input type="text" class="form-control" id="raza" placeholder="Labrador" required>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="color" class="form-label">Color</label>
+      <input type="text" class="form-control" id="color" placeholder="Blanco" required>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="sexo" class="form-label">Sexo</label>
+      <input type="text" class="form-control" id="sexo" name="sexo" list="FM" placeholder="Selecciona tu opción" required>
+      <datalist id="FM">
+          <option value="hembra"></option>
+          <option value="macho"></option>
+      </datalist>
+      <div class="invalid-feedback">
+        Por favor, selecciona una opción válida.
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="nombre_vacuna" class="form-label">Nombre de la última vacuna</label>
+      <input type="text" class="form-control" id="nombre_vacuna" placeholder="Ej. Sextuple/sin vacunas" required>
+      <div class="invalid-feedback">
+        Por favor, ingresa el nombre de la última vacuna.
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <label for="ultima_vacuna" class="form-label">Fecha de la última vacuna</label>
+      <input type="date" class="form-control" id="ultima_vacuna">
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+    </div>
+
+    <div class="col-md-12">
+      <h2>Registra su tutor/a.</h2>
+    </div>
+
+    <div class="col-md-6">
+      <label for="nombre_propietario" class="form-label">Nombre del propietario</label>
+      <input type="text" class="form-control" id="nombre_propietario" placeholder="Ej. Cosme Fulanito" required>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="dni" class="form-label">Rut</label>
+      <input type="text" class="form-control" id="dni" placeholder="12345678-9/k" pattern="^[0-9]{1,8}-[0-9kK]$" required>
+      <div class="invalid-feedback">
+        Por favor, ingresa un Rut válido.
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="direccion" class="form-label">Dirección</label>
+      <input type="text" class="form-control" id="direccion" placeholder="Alameda 1222" required>
+      <div class="valid-feedback">
+        ¡Se ve bien!
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="telefono" class="form-label">Teléfono</label>
+      <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="912345678" pattern="^[0-9]{9}$" required>
+      <div class="invalid-feedback">
+        Por favor, ingresa un número de teléfono válido.
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="correo" class="form-label">Email</label>
+      <input type="email" class="form-control" id="correo" name="correo" placeholder="xxxxx@xxxxx.xx" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" required>
+      <div class="invalid-feedback">
+        Por favor, ingresa un correo electrónico válido.
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+        <label class="form-check-label" for="invalidCheck">
+          Acepto los términos y condiciones
+        </label>
+        <div class="invalid-feedback">
+          Debes aceptar antes de enviar.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+  </div>
+</form>
+</div>
+  
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+  </a>
+  <span class="mb-3 mb-md-0 text-muted">© 2024 MascotApp</span>
+ </div>     
+</footer>
+
+  
+</body>
+</html>
