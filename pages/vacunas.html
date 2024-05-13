@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MascotApp</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  
+
+
+<body>
+<header> 
+ 
+    <!--Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: cadetblue;">
+      <div class="container-fluid">
+        <div class="navbar">
+        <a class="navbar-brand" href="/pages/Index.html">MascotApp</a>
+        <img src="/img/logo navbar.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/Index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/vacunas.html">Vacunas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/formulario.html">Registro</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/veterinarias.html">Veterinarias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/pages/ley de tenencia.html  ">Ley de Tenencia</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+      <!--Fin de Nav--> 
+</header>
+
+
+
+       <!--Mascota 1-->
+       <h1>Estado de vacunas</h1>
+     
+<!-- Modal -->
+
+<!-- Botón para cada vacuna -->
+<div class="d-flex justify-content-center mt-5 ">
+
+<button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#rabiaModal">
+  Vacuna contra la rabia
+</button>
+
+<button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#panleucopeniaModal">
+  Vacuna contra la panleucopenia felina
+</button>
+
+<button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#calicivirusModal">
+  Vacuna contra el calicivirus felino
+</button>
+
+<button type="button" class="btn btn-primary me-3" data-bs-toggle="modal" data-bs-target="#leucemiaModal">
+  Vacuna contra la leucemia felina
+</button>
+</div>
+<!-- Modales para cada vacuna -->
+<div class="modal fade" id="rabiaModal" tabindex="-1" aria-labelledby="rabiaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="rabiaModalLabel">Vacuna contra la rabia</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        La vacuna contra la rabia es una vacuna vital para proteger a los gatos y también a los humanos contra esta enfermedad viral mortal.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="panleucopeniaModal" tabindex="-1" aria-labelledby="panleucopeniaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="panleucopeniaModalLabel">Vacuna contra la panleucopenia felina</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        La vacuna contra la panleucopenia felina es esencial para proteger a los gatos contra esta enfermedad altamente contagiosa que afecta el sistema gastrointestinal.
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="calicivirusModal" tabindex="-1" aria-labelledby="calicivirusModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="calicivirusModalLabel">Vacuna contra el calicivirus felino</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        El calicivirus felino es otro virus respiratorio común en los gatos que puede causar síntomas como fiebre, secreción nasal y úlceras en la boca. La vacuna contra el calicivirus felino es una parte importante del programa de vacunación de los gatos para prevenir la enfermedad.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="leucemiaModal" tabindex="-1" aria-labelledby="leucemiaModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="leucemiaModalLabel">Vacuna contra la leucemia felina</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        La leucemia felina es una enfermedad viral grave que afecta al sistema inmunológico de los gatos y puede ser fatal. La vacuna contra la leucemia felina se recomienda especialmente para gatos que tienen acceso al exterior, ya que tienen un mayor riesgo de contraer la enfermedad.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fin botón Modal -->
+
+
+       <div class="card">
+        <img src="/img/gata2.jpeg" alt="Pandora" width="70%" height="auto">
+        <div class="card-content">
+          <h2>Pandora</h2>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+          <tr>
+              <th scope="col">Edad aprox</th>
+              <th scope="col">Estirilizado</th>
+              <th scope="col">Última vacuna</th>
+              <th scope="col">Fecha última vacuna</th>
+              <th scope="col">Próxima vacuna</th>
+              <th scope="col">Vacunas</th>
+              </tr>
+              </thead>
+          </tr>
+          <tbody>
+          <tr>
+              <td>5</td>
+              <td>Sí</td>
+              <td>Leucemia Felina</td>
+              <td>02/05/2021</td>
+              <td>Antirábica</td>
+              <td>21/12/24</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+       <!--Mascota 2-->
+
+       <div class="card">
+        <img src="/img/jinx.jpg" alt="Jinx" width="70%" height="auto">
+        <div class="card-content">
+      <h2>Jinx</h2>
+    <div class="table">
+        <table border="2">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+          <tr>
+              <th scope="col">Edad aprox</th>
+              <th scope="col">Estirilizado</th>
+              <th scope="col">Última vacuna</th>
+              <th scope="col">Fecha última vacuna</th>
+              <th scope="col">Próxima vacuna</th>
+              <th scope="col">Vacunas</th>
+              </tr>thead>
+          </tr>
+          <tbody>
+            <tr>
+                <td>5</td>
+                <td>Sí</td>
+                <td>Leucemia Felina</td>
+                <td>No tiene</td>
+                <td>Antirábica</td>
+                <td>07/10/24</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+
+        <!--Mascota 3-->
+
+        <div class="card">
+        <img src="/IMG/huhcat2.jpeg" alt="Huh">
+        <div class="card-content">
+          <h2>Huh</h2>
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+          <tr>
+              <th scope="col">Edad aprox</th>
+              <th scope="col">Estirilizado</th>
+              <th scope="col">Última vacuna</th>
+              <th scope="col">Fecha última vacuna</th>
+              <th scope="col">Próxima vacuna</th>
+              <th scope="col">Vacunas</th>
+              </tr>
+              </thead>
+          </tr>
+        <tbody>
+          <tr>
+                <td>10</td>
+                <td>No</td>
+                <td>Leucemia Felina</td>
+                <td>05/01/2020</td>
+                <td>Completa</td>
+                <td>Completa</td>
+                </tr>
+          </tbody>
+              </table>
+             </div>
+        </div>
+      </div>
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <div class="col-md-4 d-flex align-items-center">
+  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+  </a>
+  <span class="mb-3 mb-md-0 text-muted">© 2024 MascotApp</span>
+ </div>     
+</footer>
+
+ 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
