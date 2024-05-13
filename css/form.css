@@ -1,0 +1,106 @@
+/*Background*/
+
+body {
+    background-image: url('/img/pet\ pattern\ background.png'); /* Ruta del background */
+    background-repeat: repeat; /* Establece la repetición en mosaico de la imagen de fondo */
+    margin: 0; 
+    padding: 0;
+  }
+  .bg-custom {
+    background-color: #ffffffbd; /* Cambia este valor al color que desees */
+    padding: 20px; /* Añade espaciado interior si lo necesitas */
+}
+
+  /* Título */
+  h1 {
+    text-align: center;
+    font-family: fantasy;
+    background-color:#ccc;
+  
+  }
+  
+    header {
+      background-color: cadetblue;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 20px;
+    }
+    
+    .logo img {
+      width: 30px; /* Ajusta el tamaño del ícono según sea necesario */
+      border-radius: 50%; /* Para hacer el ícono circular */
+      background-color: white;
+    }
+  
+    .logo-text {
+      font-family: Arial, sans-serif; /* Establece la fuente del texto */
+      font-size: 16px; /* Define el tamaño del texto */
+      color: #333; /* Establece el color del texto */
+      font-weight: bold; /* Hace que el texto aparezca en negrita */
+      vertical-align: super;
+  
+    }
+  
+    .nav-container {
+      text-align: center; /* Alinea el texto al centro */
+      flex: 1; /* Hace que el contenedor ocupe el espacio disponible */
+    }
+
+
+  /* Estilo personalizado para la barra de navegación */
+  .navbar {
+    background-color: cadetblue; /* Cambiar el color de fondo de la barra de navegación */
+  }
+  
+  /* Estilo personalizado para el enlace de la marca de la barra de navegación */
+  .navbar-brand {
+    color: rgb(14, 40, 41); /* Cambiar el color del texto de la marca */
+    font-weight: bold; /* Hacer que el texto de la marca sea negrita */
+  }
+  
+  /* Estilo personalizado para el enlace de la marca de la barra de navegación al pasar el mouse */
+  .navbar-brand:hover {
+    color: #555; /* Cambiar el color del texto de la marca al pasar el mouse */
+  }
+  
+  /* Estilo personalizado para los enlaces de la barra de navegación */
+  .navbar-nav .nav-link {
+    color: #333; /* Cambiar el color del texto de los enlaces */
+  }
+  
+  /* Estilo personalizado para los enlaces de la barra de navegación al pasar el mouse */
+  .navbar-nav .nav-link:hover {
+    color: #555; /* Cambiar el color del texto de los enlaces al pasar el mouse */
+  }
+  
+  /* Estilo personalizado para el botón de búsqueda */
+  .navbar .form-control {
+    width: 200px; /* Ajustar el ancho del campo de búsqueda */
+    margin-right: 10px; /* Agregar espacio a la derecha del campo de búsqueda */
+  }
+  
+  
+    
+/* Formularios */
+.form-container {
+  background-color: rgba(0, 0, 0, 0.252);
+    max-width: 300px; /* Ancho máximo del contenedor del formulario */
+    margin: 0 auto; /* Centrar el formulario horizontalmente */
+  }
+
+
+  /* Footer */ 
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: cadetblue; /* Color de fondo opcional */
+    padding: 5%; /* Espaciado interior opcional */
+  }
+  .footer-content {
+    max-width: auto; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido */
+  }
+  

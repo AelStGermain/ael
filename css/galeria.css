@@ -1,0 +1,149 @@
+
+/*Background*/
+
+body {
+    background-image: url('/img/pet\ pattern\ background.png'); /* Ruta del background */
+    background-repeat: repeat; /* Establece la repetición en mosaico de la imagen de fondo */
+    background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
+    margin: 0; 
+    padding: 0;
+  }
+/* Título */
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    background-color:#ccc;
+  
+  }
+  
+    header {
+      background-color: cadetblue;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 20px;
+    }
+    
+
+  
+.nav-container {
+    text-align: center; /* Alinea el texto al centro */
+    flex: 1; /* Hace que el contenedor ocupe el espacio disponible */
+  }
+    
+  /* Estilo personalizado para la barra de navegación */
+  .navbar {
+    background-color: cadetblue; /* Cambiar el color de fondo de la barra de navegación */
+  }
+  
+  /* Estilo personalizado para el enlace de la marca de la barra de navegación */
+  .navbar-brand {
+    color: rgb(14, 40, 41); /* Cambiar el color del texto de la marca */
+    font-weight: bold; /* Hacer que el texto de la marca sea negrita */
+  }
+  
+  /* Estilo personalizado para el enlace de la marca de la barra de navegación al pasar el mouse */
+  .navbar-brand:hover {
+    color: #555; /* Cambiar el color del texto de la marca al pasar el mouse */
+  }
+  
+  /* Estilo personalizado para los enlaces de la barra de navegación */
+  .navbar-nav .nav-link {
+    color: #333; /* Cambiar el color del texto de los enlaces */
+  }
+  
+  /* Estilo personalizado para los enlaces de la barra de navegación al pasar el mouse */
+  .navbar-nav .nav-link:hover {
+    color: #555; /* Cambiar el color del texto de los enlaces al pasar el mouse */
+  }
+  
+  /* Estilo personalizado para el botón de búsqueda */
+  .navbar .form-control {
+    width: 200px; /* Ajustar el ancho del campo de búsqueda */
+    margin-right: 10px; /* Agregar espacio a la derecha del campo de búsqueda */
+  }
+  
+  
+
+.carousel {
+  width: 600px; /* Tamaño fijo para la galería */
+  margin: 0 auto; /* Centrar la galería horizontalmente */
+}
+
+.carousel-item {
+  display: inline-block; /* Muestra los elementos de la galería en línea */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Estilizar el texto "Pandora" cuando la galería llegue al final */
+.carousel-inner .gallery:last-child {
+  text-align: center; /* Alinear el texto al centro */
+  padding: 20px; /* Añadir espacio alrededor del texto */
+  background-color: #f8f9fa; /* Color de fondo para resaltar el texto */
+}
+
+
+/* Estilo para el carousel */
+.carousel {
+  width: 50%; /* Ancho del carousel al 100% del contenedor padre */
+}
+
+
+/* Estilo para las imágenes dentro del carousel */
+.carousel-item img {
+  width: 70%; /* Ancho al 100% del contenedor padre */
+  height: auto; /* Altura automática para mantener la proporción de aspecto */
+  max-width: 300px; /* Ancho máximo */
+  max-height: 300px; /* Altura máxima */
+  object-fit: cover; /* Escalado para cubrir */
+  border-radius: 10px
+}
+
+/* Estilo para los controles de navegación del carousel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Ancho de los controles de navegación */
+  color: #000; /* Color de los iconos de control */
+}
+
+/* Estilo para el ícono de navegación "prev" */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M7 0l-3 3 3 3H5v2H2V3H0l3-3-3-3h2z'/%3e%3c/svg%3e"); /* Ícono de flecha "prev" */
+}
+
+/* Estilo para el ícono de navegación "next" */
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M1 0l3 3-3 3h2v-2h3V3H3V1H1z'/%3e%3c/svg%3e"); /* Ícono de flecha "next" */
+}
+
+
+.gallery-container {
+  display: flex; /* Establece el contenedor como un contenedor flexible */
+  justify-content: center; /* Distribuye el espacio entre los elementos del contenedor */
+}
+
+.gallery-container {
+  display: flex; /* Utiliza flexbox para alinear las galerías horizontalmente */
+  justify-content: center; /* Centra las galerías horizontalmente */
+  margin-top: 20px; /* Añade un margen superior para separar las galerías del encabezado */
+}
+.gallery-title {
+  text-align: center; /* Centra el texto del título */
+  margin-top: 10px; /* Añade un poco de espacio arriba del título */
+  font-size: 24px; /* Tamaño del texto del título */
+  font-weight: bold; /* Hace el texto del título en negrita */
+}
+
+  /* Footer */ 
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: cadetblue; /* Color de fondo opcional */
+  padding: 5%; /* Espaciado interior opcional */
+}
+.footer-content {
+  max-width: auto; /* Ancho máximo del contenido */
+  margin: 0 auto; /* Centrar el contenido */
+}
